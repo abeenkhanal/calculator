@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+   
+   
 </head>
 <body>
     <div class="calculator">
-        <div class="result"><span>0</span></div>
+      ,<input type="text" value="0" id="display">
         
         <div class="buttons">
-            <button type="button" class="operator" value="C">C</button>
-            <button type="button" class="operator" value="()">()</button>
-            <button type="button" class="operator" value="%">%</button>
-            <button type="button" class="operator" value="/">/</button>
+            <button class="operator" onclick="operator()" >C</button>
+            <button class="operator" onclick="operator()">()</button>
+            <button class="operator" onclick="operator()">%</button>
+            <button class="operator" onclick="operator()" >/</button>
             <br>
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-            <button type="button" class="operator" value="7">*</button>
+            <button class="number" onclick="Value(7)" >7</button>
+            <button class="number" onclick="Value(8)" >8</button>
+            <button class="number" onclick="Value(9)">9</button>
+            <button class="operator" onclick="operator()">*</button>
+        <br>
+            <button class="number" onclick="Value(4)">4</button>
+            <button class="number" onclick="Value(5)">5</button>
+            <button class="number" onclick="Value(6)">6</button>
+            <button class="operator" onclick="operator()">-</button>
             <br>
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button"class="operator" value="-">-</button>
+            <button class="number" onclick="Value(1)">1</button>
+            <button class="number" onclick="Value(2)">2</button>
+            <button class="number" onclick="Value(3)">3</button>
+            <button class="operator" onclick="operator('+')">+</button>
             <br>
-            <button type="button"  value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-            <button type="button" class="operator" value="+">+</button>
-            <br>
-            <button type="button" value="C1">C1</button>
-            <button type="button" value="0">0</button>
-            <button type="button" value=".">.</button>
-            <button type="button" class="operator" value="=">=</button>
+            <button class="operator" onclick="operator()">AC</button>
+            <button class="number" onclick="Value(0)">0</button>
+            <button class="number" onclick="Value()">.</button>
+            <button class="operator" onclick="result()">=</button>
 
         </div>
     </div>
-           <button onclick="ClickMe()">hello </button>
+           
 
-           <script>
-            function ClickMe(){
-                alert("HRERES")
-            }
+           <script src="./index.js">
+           
            </script>
 </body>
 </html>
