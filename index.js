@@ -1,6 +1,7 @@
 let firstvalue ="";
 let secondvalue="";
 let opt=""
+let output=0;
 let add =document.getElementById('display')
 
 const Value =(num)=>{
@@ -11,11 +12,40 @@ const Value =(num)=>{
         secondvalue+=num
         add.value+=num
     }
-    console.log(firstvalue,secondvalue,opt)
+    console.log(firstvalue,opt,secondvalue)
 }
 
 
 result =()=>{
+    if(opt=="+"){
+console.log("+")
+output=Number(firstvalue)+Number(secondvalue);
+    }
+    else if( opt=="-"){
+        console.log("-")
+        output=Number(firstvalue)-Number(secondvalue);
+
+    }
+    else if( opt=="*"){
+        console.log("*")
+        output=Number(firstvalue)*Number(secondvalue);
+
+    }
+    else if( opt=="/"){
+        console.log("/")
+        output=Number(firstvalue)/Number(secondvalue);
+
+    }
+    else if( opt=="%"){
+        console.log("%")
+        output=Number(firstvalue)%Number(secondvalue);
+
+    }
+    else{
+        console.log("invalid operator")
+    }
+    add.value=output;
+
 
 }
 

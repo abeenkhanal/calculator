@@ -37,17 +37,14 @@ button.operator {
     color: yellow;
 }
 
-.result{
+.result input{
+    width: 330px;
     font-size: 40px;
     text-align: right;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     border: 1px solid black;
     padding: 10px 20px;
     border-radius: 20px;
     margin:10px 20px;background-color: #444040;
 color: white;
-   
-
-   
-
 }
